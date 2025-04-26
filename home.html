@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>elmakon.uz - internet do'koni | Muddatli to'lov va penyasiz kreditga elektronika va maishiy texnikalar</title>
+    <link rel="icon" href="https://elmakon.uz/images/logos/8/elmakon.png">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <div class="header_div1">
+            <div class="header_div11">
+              <div class="header_div12">
+                <a href=""><div class="text_div1"><h5 id="text1">Chegirmalar</h5></div></a>
+                <a href=""><div class="text_div2"><h5 id="text2">Aksiyalar</h5></div></a>
+                <div class="text_div3">
+                  <a id="a11" href=""><h5 id="text3">Do'konlar manzili</h5></a>
+                  <a id="a12" href=""><h5 id="text4">Kontaktlar</h5></a>
+                  <a id="a13" href=""><h5 id="text5">Muddatli to'lov holati</h5></a>
+                  <a id="a14" href=""><h5 id="text6">Telegram</h5></a>
+                </div>
+              </div>
+              <div class="header_div13">
+                  <div class="btn-group">
+                    <button id="dropdown1" type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                     <img id="imga" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAb1BMVEX///8etToAmbXOESbKAAAlk67WABDWACQzrjkAl7QAlbIAk7EAkbDv+PoAja1EqsHB4Ohvu82Qydeo096y2eMbobuOyNbl8/bU6vB7wNHd7/Mto7yk0t5ftMjo9fhQrsTN5Op4vs+c096m09693ueS23ByAAAEuklEQVR4nO2cCXOjOBBGtewx25K4D3PaTuL//xsXAwaRGkCujncC871KpUplROBFV7eUCAcwEL/6AfYN9LGAPhbQx8JaH0mllCT6ih/6NXf5DtjpI0V+Vt+uQZbavbm/VqS0Ooo/G31SN4FocSPf8rVVqWbFoDKLVGTS+gG/N9v6SL+5d3mnRlu+NGlfVHo0TcoTkTfVVd4199RPa+6OTX2qKu/yRKZtOxy9dxXq4XoKu+L10e2rc9eS/eUb7IgtfaroXt6tnuhuym9rVGP7IjoJUUz29U2IwPqX8b3Z0Kf7llQ+NVdSJUphzA7KPQljtFOBcK+/RedVUWfv9FxTkR+FV9SjL2pu2g+M1ps71H4995zflFV96q2zJ55+V+mYfT2VsxukbcuT6ZN3/Kas6Ws7YcflGC3lFazpU/2cm+j/7Wl2x4q+YcWBqHiFFTn63K/fDjJJvoRlfXTpG99BBvnXsKxP3Tp7OUa+FVb0dZGuiI4S3b+EZX3DqsUyybLexS3TXPtjUR8NS2arcI3SZJ6hus2LyWzdTOHbUXQu6pN9vOZazLskdeF6alQidSrSKbtFynMLLcePlZcExtW7ZlGfivtwd1sfpbfcFXkZPjJU72UpyvJ9TFiVuXDz4NGB/TxvJ6T8GKHMsr7EVl9L0DbTZmxuXaIhGiuqpi0G47WUtsHM6SDp+i9ofW1vbeOTk7nAuY+ZU0mfhAiNhNVHGwgeZC2+PPZl1mOfo/IsPU/pYxkFFBgLHv+cZkaCT7nNxeq2O2B55n1EvDa9zJdERvb9ohx1MT4lktOnlFbyMHtty+u+9FXZKhq/7R9EHSyW9cl+6i0R866wknHx+957kFHqNazl+4Zk80EmyZewlm1ukPDbYi0Vr6/9+QCMfous72T0zS/8Sff9nIh5qngcVvXJZmn2oObTejCbFeX8CJXM5pUvzVF8bpwyGE64fGo+JHVSGxkpqZrSmzJSpBxBU0aKpHdqlDTyWXVi5K92zcY25MNfarYmusSR60bxEIhRGte5qONHDpSiOhFJHT2uDuNI5HU8JqySrvLBE1YDathva8z8puykjkkU8u8BSjwZzu9bTGOJ4u5A2qO+7ILp4hjBzOYmODndyVIRk/HCum6juWlCvjvOvelj1V5vTNdeq/My1daREPVBZnOLMwT6kncdOJvGM+W+1+dpPpbBNTSWh/TmNq6xnZGK8Hoz9J0/Ivf30Xc/bBt3Jw6SZphDqkap0Ng+K7SqptmUCkfSpI+aSqliulsaKtXMDjvvF9uT9dppijqJHyfrab7yI2e2ttso0nEWgvYHgEjKr/q7juOA81MsoI8F9LGAPhbib8BA/AMYiD8BA/EXYCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwiV/93wD2Df6TBgvxAzAQ/wIG4g/AAPpYQB8L6GMBfSygjwX0sYA+FtDHAvpYQB8L6GMBfSygjwX0sYA+FtDHAvpYQB8L6GMBfSygjwX0sYA+FtDHAvpYQB8L6GMBfSygjwX0sYA+FtDHAvpYQB8L6GMBfSygjwX0sYA+FtDHAvpYQB8L6GMBfSygjwX0sYA+FtDHAvpY/AdQ7BBSIcVm7QAAAABJRU5ErkJggg==" alt=""> uzb
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">uzbekcha</a></li>
+                      <li><a class="dropdown-item" href="#">Ruscha</a></li>
+                      <li><a class="dropdown-item" href="#">Inglizcha</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="header_div2">
+          <div class="header_div21">
+            <img id="imge1" src="https://elmakon.uz/images/logos/8/elmakon.png" alt="">
+          </div>
+          <div class="header_div22">
+            <a id="a1" href=""><i class="fa-regular fa-heart"></i></a>
+            <a id="a2" href="reyting.html"><i class="fa-solid fa-chart-simple"></i></a>
+            <a id="a3" href=""><h5 id="tel1">+998-71-203-12-03</h5></a>
+          </div>
+        </div>
+        <div class="header_div3">
+                    <div class="dropdown">
+                      <button id="down_div1" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i> 𝗧𝗼𝘃𝗮𝗿𝗹𝗮𝗿 𝗸𝗮𝘁𝗮𝗹𝗼𝗴𝗶
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+
+            <div class="search">
+                    <div id="search1" class="InputContainer">
+                      <input
+                        placeholder=""
+                        id="input"
+                        class="input"
+                        name="text"
+                        type="text"
+                      />
+                    
+                      <label class="labelforsearch" for="input">
+                        <svg class="searchIcon" viewBox="0 0 512 512">
+                          <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                          ></path>
+                        </svg>
+                      </label>
+                    </div>
+            </div>
+                    <div class="dropdown">
+                      <button id="down_div2" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-cart-shopping"></i> 𝗦𝗮𝘃𝗮𝘁𝗰𝗵𝗮
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+              <div class="dropdown">
+                <button id="down_div3" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-regular fa-circle-user"></i> 𝗞𝗶𝗿𝗶𝘀𝗵
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+        </div>
+        <div class="header_div4">
+          
+        </div>
+        <div class="header_div5">
+          <div class="asil_div1">
+            <img id="asil1" src="https://elmakon.uz/images/abt__ut2/banners/all/34/1__1160x600__uz.png" alt="">
+            <img id="asil2" src="https://elmakon.uz/images/abt__ut2/banners/all/37/2__1160x600__uz.png" alt="">
+            <img id="asil3" src="https://elmakon.uz/images/abt__ut2/banners/all/34/3__1160x600__uz.png" alt="">
+            <img id="asil4" src="https://elmakon.uz/images/abt__ut2/banners/all/34/4__1160x600__uz.png" alt="">
+          </div>
+          <div class="asil_div2">
+            <img id="asil5" src="https://elmakon.uz/images/abt__ut2/banners/all/34/5__1160x600__uz.png" alt="">
+            <img id="asil6" src="https://elmakon.uz/images/abt__ut2/banners/all/34/6__1160x600__uz.png" alt="">
+            <img id="asil7" src="https://elmakon.uz/images/abt__ut2/banners/all/34/7__1160x600__uz.png" alt="">
+            <img id="asil8" src="https://elmakon.uz/images/abt__ut2/banners/all/34/8__1160x600__uz.png" alt="">
+          </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="main_div1">
+            <div class="main_div11">
+              <h4 id="nomi">𝐊𝐨'𝐩 𝐬𝐨𝐭𝐢𝐥𝐠𝐚𝐧𝐥𝐚𝐫 / 𝐂𝐡𝐞𝐠𝐢𝐫𝐦𝐚 / 𝐎𝐦𝐦𝐚𝐛𝐨𝐩</h4>
+              <div class="mavzular">
+                <a id="a51" href=""><h6>Ko'p sotilganlar</h6></a>
+                <a id="a52" href=""><h6>Chegirmali mahsulotlar</h6></a>
+                <a id="a53" href=""><h6>Ko'p tanlangan mahsulotlar</h6></a>
+              </div>
+            </div>
+            <div class="main_div12">
+                <div class="card" style="width: 15.2rem;">
+                    <img id="img1" src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="h11" class="card-title"></h5>
+                      <p id="p11" class="card-text"></p>
+                        <div class="card_div1">
+                            <i id="i11" class="fa-solid fa-star"></i>
+                            <p id="p12"></p>
+                            <i id="i12" class="fa-regular fa-message"></i>
+                            <p id="p13"></p>
+                        </div>
+                        <div>
+                            <s id="s11">150$</s>
+                            <h5 id="h12"></h5>
+                            <p id="p14">10$/мес.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 15.2rem;">
+                 
+                   <img id="img2" src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="h21" class="card-title"></h5>
+                      <p id="p21" class="card-text"></p>
+                        <div class="card_div2">
+                            <i id="i21" class="fa-solid fa-star"></i>
+                            <p id="p22"></p>
+                            <i id="i22" class="fa-regular fa-message"></i>
+                            <p id="p23"></p>
+                        </div>
+                        <div>
+                            <s id="s21">25 $</s>
+                            <h5 id="h22"></h5>
+                            <p id="p24">3 $/мес.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 15.2rem;">
+                    <img id="img3" src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="h31" class="card-title"></h5>
+                      <p id="p31" class="card-text"></p>
+                        <div class="card_div3">
+                            <i id="i31" class="fa-solid fa-star"></i>
+                            <p id="p32"></p>
+                            <i id="i32" class="fa-regular fa-message"></i>
+                            <p id="p33"></p>
+                        </div>
+                        <div>
+                            <s id="s31">60 $</s>
+                            <h5 id="h32"></h5>
+                            <p id="p34">5 $/мес.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 15.2rem;">
+                    <img id="img4" src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="h41" class="card-title"></h5>
+                      <p id="p41" class="card-text"></p>
+                        <div class="card_div4">
+                            <i id="i41" class="fa-solid fa-star"></i>
+                            <p id="p42"></p>
+                            <i id="i42" class="fa-regular fa-message"></i>
+                            <p id="p43"></p>
+                        </div>
+                        <div>
+                            <s id="s41">18 $</s>
+                            <h5 id="h42"></h5>
+                            <p id="p44">2 $/мес.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 15.2rem;">
+                    <img id="img5" src="" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 id="h51" class="card-title"></h5>
+                      <p id="p51" class="card-text"></p>
+                        <div class="card_div5">
+                            <i id="i51" class="fa-solid fa-star"></i>
+                            <p id="p52"></p>
+                            <i id="i52" class="fa-regular fa-message"></i>
+                            <p id="p53"></p>
+                        </div>
+                        <div>
+                            <s id="s51">700 $</s>
+                            <h5 id="h52"></h5>
+                            <p id="p54">60 $/мес.</p>
+                        </div>
+                        
+                    </div>
+                  </div>
+
+            </div>
+            <div class="main_div13">
+              <button id="btn1">SHOW MORE</button>
+            </div>
+        </div>
+                <div class="imge2">
+                  <a id="aa1" href=""><h4 id="hh1">Barcha Samsung <br> mahsulotlar bir joyda !</h4></a>
+                </div>
+
+                <!-- ///////////////////////////////////////////////////// -->
+
+        <div class="main_div21">
+          <div class="main_div211">
+            <h4 id="nomi1">𝐘𝐚𝐧𝐠𝐢 𝐦𝐚𝐡𝐬𝐮𝐥𝐨𝐭𝐥𝐚𝐫</h4>
+          </div>
+          <div class="main_div212">
+              <div class="card" style="width: 15.2rem;">
+                  <img id="img11" src="" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 id="h111" class="card-title"></h5>
+                    <p id="p111" class="card-text"></p>
+                      <div class="card_div11">
+                          <i id="i111" class="fa-solid fa-star"></i>
+                          <p id="p112"></p>
+                          <i id="i112" class="fa-regular fa-message"></i>
+                          <p id="p113"></p>
+                      </div>
+                      <div>
+                          <s id="s111">150$</s>
+                          <h5 id="h112"></h5>
+                          <p id="p114">10$/мес.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 15.2rem;">
+               
+                 <img id="img12" src="" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 id="h121" class="card-title"></h5>
+                    <p id="p121" class="card-text"></p>
+                      <div class="card_div12">
+                          <i id="i121" class="fa-solid fa-star"></i>
+                          <p id="p122"></p>
+                          <i id="i122" class="fa-regular fa-message"></i>
+                          <p id="p123"></p>
+                      </div>
+                      <div>
+                          <s id="s121">25 $</s>
+                          <h5 id="h122"></h5>
+                          <p id="p124">3 $/мес.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 15.2rem;">
+                  <img id="img13" src="" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 id="h131" class="card-title"></h5>
+                    <p id="p131" class="card-text"></p>
+                      <div class="card_div13">
+                          <i id="i131" class="fa-solid fa-star"></i>
+                          <p id="p132"></p>
+                          <i id="i132" class="fa-regular fa-message"></i>
+                          <p id="p133"></p>
+                      </div>
+                      <div>
+                          <s id="s131">60 $</s>
+                          <h5 id="h132"></h5>
+                          <p id="p134">5 $/мес.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 15.2rem;">
+                  <img id="img14" src="" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 id="h141" class="card-title"></h5>
+                    <p id="p141" class="card-text"></p>
+                      <div class="card_div14">
+                          <i id="i141" class="fa-solid fa-star"></i>
+                          <p id="p142"></p>
+                          <i id="i142" class="fa-regular fa-message"></i>
+                          <p id="p143"></p>
+                      </div>
+                      <div>
+                          <s id="s141">18 $</s>
+                          <h5 id="h142"></h5>
+                          <p id="p144">2 $/мес.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 15.2rem;">
+                  <img id="img15" src="" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 id="h151" class="card-title"></h5>
+                    <p id="p151" class="card-text"></p>
+                      <div class="card_div15">
+                          <i id="i151" class="fa-solid fa-star"></i>
+                          <p id="p152"></p>
+                          <i id="i152" class="fa-regular fa-message"></i>
+                          <p id="p153"></p>
+                      </div>
+                      <div>
+                          <s id="s151">700 $</s>
+                          <h5 id="h152"></h5>
+                          <p id="p154">60 $/мес.</p>
+                      </div>
+                      
+                  </div>
+                </div>
+
+          </div>
+          <div class="main_div213">
+            <button id="btn1">SHOW MORE</button>
+          </div>
+      </div>
+
+      <!-- ///////////////////////////////////////////////////// -->
+
+      <div class="main_div51">
+        <div class="main_div511">
+          <h4 id="nomi2">𝐊𝐨'𝐩 𝐬𝐨'𝐫𝐚𝐥𝐠𝐚𝐧 𝐦𝐚𝐱𝐬𝐮𝐥𝐨𝐭𝐥𝐚𝐫</h4>
+        </div>
+        <div class="main_div512">
+            <div class="card" style="width: 15.2rem;">
+                <img id="img51" src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="h511" class="card-title"></h5>
+                  <p id="p511" class="card-text"></p>
+                    <div class="card_div1">
+                        <i id="i511" class="fa-solid fa-star"></i>
+                        <p id="p512"></p>
+                        <i id="i512" class="fa-regular fa-message"></i>
+                        <p id="p513"></p>
+                    </div>
+                    <div>
+                        <s id="s511">150$</s>
+                        <h5 id="h512"></h5>
+                        <p id="p514">10$/мес.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="card" style="width: 15.2rem;">
+             
+               <img id="img52" src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="h521" class="card-title"></h5>
+                  <p id="p521" class="card-text"></p>
+                    <div class="card_div2">
+                        <i id="i521" class="fa-solid fa-star"></i>
+                        <p id="p522"></p>
+                        <i id="i522" class="fa-regular fa-message"></i>
+                        <p id="p523"></p>
+                    </div>
+                    <div>
+                        <s id="s521">25 $</s>
+                        <h5 id="h522"></h5>
+                        <p id="p524">3 $/мес.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="card" style="width: 15.2rem;">
+                <img id="img53" src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="h531" class="card-title"></h5>
+                  <p id="p531" class="card-text"></p>
+                    <div class="card_div3">
+                        <i id="i531" class="fa-solid fa-star"></i>
+                        <p id="p532"></p>
+                        <i id="i532" class="fa-regular fa-message"></i>
+                        <p id="p533"></p>
+                    </div>
+                    <div>
+                        <s id="s531">60 $</s>
+                        <h5 id="h532"></h5>
+                        <p id="p534">5 $/мес.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="card" style="width: 15.2rem;">
+                <img id="img54" src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="h541" class="card-title"></h5>
+                  <p id="p541" class="card-text"></p>
+                    <div class="card_div4">
+                        <i id="i541" class="fa-solid fa-star"></i>
+                        <p id="p542"></p>
+                        <i id="i542" class="fa-regular fa-message"></i>
+                        <p id="p543"></p>
+                    </div>
+                    <div>
+                        <s id="s541">18 $</s>
+                        <h5 id="h542"></h5>
+                        <p id="p544">2 $/мес.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="card" style="width: 15.2rem;">
+                <img id="img55" src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 id="h551" class="card-title"></h5>
+                  <p id="p551" class="card-text"></p>
+                    <div class="card_div5">
+                        <i id="i551" class="fa-solid fa-star"></i>
+                        <p id="p552"></p>
+                        <i id="i552" class="fa-regular fa-message"></i>
+                        <p id="p553"></p>
+                    </div>
+                    <div>
+                        <s id="s551">700 $</s>
+                        <h5 id="h552"></h5>
+                        <p id="p554">60 $/мес.</p>
+                    </div>
+                    
+                </div>
+              </div>
+
+        </div>
+        <div class="main_div13">
+          <button id="btn1">SHOW MORE</button>
+        </div>
+    </div>
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="texts">
+        <div class="texts1">
+          <h4 id="nomi3">𝐊𝐨𝐦𝐩𝐚𝐧𝐢𝐲𝐚 𝐡𝐚𝐪𝐢𝐝𝐚</h4>
+            <h6 id="nomi31">
+              A site that sells products online. Allows users to create a purchase order, choose a payment method and deliver the order on the Internet. Having chosen the necessary goods or services, the user usually has the opportunity to select a method of payment and delivery on the site right away.
+            </h6>
+            <h6 id="nomi32">
+              The main difference between the Internet store and the traditional one is in the type of the trading platform. A typical store needs a trading hall, shop windows, price tags, as well as sellers, cashiers and experienced consultants, the online store has the entire infrastructure implemented programmatically.
+            </h6>
+        </div>
+        <div class="texts2">
+              <div class="texts21">
+                <h4>𝐘𝐚𝐧𝐠𝐢𝐥𝐢𝐤𝐥𝐚𝐫𝐢𝐦𝐢𝐳𝐠𝐚 𝐨𝐛𝐮𝐧𝐚 𝐛𝐨'𝐥𝐢𝐧𝐠!</h4>
+                <h6>Eksklyuziv chegirmalar, aksiyalar va Siz uchun foydali xaridlar</h6>
+                <h6 id="txt1">A'zo bo'ling va bizni kuzatib boring!</h6>
+                <div class="inp1">
+                  <input id="inp1" type="text" placeholder="E-mail">
+                  <button class="button" style="vertical-align:middle"><span>A'ZO BO'LISH</span></button>
+                </div>
+              </div>
+              <div class="texts22">
+                <h4>𝐁𝐢𝐳𝐠𝐚 𝐪𝐨'𝐬𝐡𝐢𝐥𝐢𝐧𝐠!</h4>
+                <h6>Guruhimizga qo'shiling</h6>
+                <h6 id="txt1">barcha aksiyalar va takliflardan birinchi bo'lib xabardor bo'ling!</h6>
+                <div class="logo">
+                  <a id="a31" href=""><i id="i111" class="fa-brands fa-facebook"></i></a>
+                  <a id="a31" href=""><i id="i111" class="fa-brands fa-instagram"></i></a>
+                  <a id="a31" href=""><i id="i111" class="fa-brands fa-telegram"></i></a>
+                  <a id="a31" href=""><i id="i111" class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+      <div class="footer_div1">
+        <div class="footer_div11">
+                <div class="footer_div111">
+                  <h4 id="h9">𝐒𝐡𝐚𝐱𝐬𝐢𝐲 𝐤𝐚𝐛𝐢𝐧𝐞𝐭</h4>
+                 <a id="a111"  href=""> <h6>Kirish yoki ro'yxatdan o'tish</h6></a>
+                </div>
+                <div class="footer_div111">
+                  <h4 id="h9">𝐎𝐧𝐥𝐚𝐲𝐧-𝐝𝐨'𝐤𝐨𝐧</h4>
+                  <a id="a111"  href="https://elmakon.uz/uz/o-kompanii/"> <h6>Biz haqimizda</h6></a>
+                  <a id="a111"  href="https://elmakon.uz/uz/complaints-suggestions/"> <h6>Taklif va shikoyatlar</h6></a>
+                  <a id="a111"  href="https://elmakon.uz/index.php?dispatch=product_features.view_all&filter_id=10"> <h6>Savdo belgilari</h6></a>
+                  <a id="a111"  href="https://elmakon.uz/uz/sitemap/"> <h6>Sayt xaritasi</h6></a>
+                  <a id="a111"  href="https://elmakon.uz/uz/blog/"> <h6>Blog</h6></a>
+                </div>
+                <div class="footer_div111">
+                  <h4 id="h9">𝐌𝐢𝐣𝐨𝐳𝐥𝐚𝐫 𝐮𝐜𝐡𝐮𝐧</h4>
+                  <a id="a111"  href="https://elmakon.uz/uz/login/?return_url=index.php%3Fsl%3Duz%26dispatch%3Dorders.search"> <h6 id="a112">Buyurtmalaringiz</h6></a>
+                  <a id="a111"  href="https://elmakon.uz/uz/wishlist/"> <h6>Kechiktirilgan xaridlar</h6></a>
+                  <a id="a111"  href=""> <h6>Tovarlarni taqqoslash</h6></a>
+                  <a id="a111"  href="https://elmakon.uz/installment/report"> <h6>Muddatli to'lov holati</h6></a>
+                  <a id="a111"  href=""> <h6>Sovg'a sertifikati</h6></a>
+                  <a id="a111"  href=""> <h6>Mijoz sodiqlik dasturi</h6></a>
+                </div>
+                <div class="footer_div111">
+                  <h4 id="h9">𝐌𝐚'𝐥𝐮𝐦𝐨𝐭𝐥𝐚𝐫</h4>
+                  <a id="a111"  href=""> <h6>Magazinlar manzili</h6></a>
+                  <a id="a111"  href=""> <h6>To'lovlar va yetkazib berish</h6></a>
+                  <a id="a111"  href=""> <h6>Muddatli to'lov shartlari</h6></a>
+                  <a id="a111"  href=""> <h6>Shaxsga doir ma'lumotlar</h6></a>
+                  <a id="a111"  href=""> <h6>Tovarlarni qaytarish</h6></a>
+                  <a id="a111"  href=""> <h6>Cashback</h6></a>
+                  <a id="a111"  href=""> <h6>Oferta</h6></a>
+                </div>
+                <div class="footer_div111">
+                  <h4 id="h9">𝐊𝐨𝐧𝐭𝐚𝐤𝐭𝐥𝐚𝐫</h4>
+                  <h6 id="h0">Kontaktlar
+                    г. Ташкент, Шайхонтоҳур тумани, ул. Кичик халка йули 57б</h6>
+                  <a id="a111"  href=""> <h6>+998-71-203-1203</h6></a>
+                  <h6 id="h0">Du-Ya 9.00 - 18.00</h6>
+                  <a id="a112"  href=""> <h6>info@elmakon.uz</h6></a>
+                  <a id="a112"  href=""> <h6>Xaritadan ko'rish</h6></a>
+                </div>
+        </div>
+        <div class="footer_div12">
+          <h6 id="h00">© 2017 - 2025 OOO "Mobile Retail". Elmakon</h6>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
